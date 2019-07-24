@@ -19,7 +19,8 @@ class App extends Component {
         this.props.upDateWeatherData(responseData);
       })
   }  
-  componentDidMount(){    
+  componentDidMount(){
+    //setTimout set for demo purpose, so that weather report page will load after few secconds    
     setTimeout(()=>{      
       this.getApiData();
     },3000)
